@@ -162,8 +162,9 @@ namespace Assignment
                 string rowStr = "";
                 for (int col = 0;col < my2DArray.GetLength(1); col++)
                 {
-                    rowStr += my2DArray[row, col];
+                    rowStr += my2DArray[row, col] + ",";
                 }
+                Debug.Log(rowStr);
             }
         }
 
