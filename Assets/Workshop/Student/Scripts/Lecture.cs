@@ -14,7 +14,7 @@ namespace Assignment
             // LCT02_ArrayInitialize();
             // LCT03_SyntaxLoop();
             // LCT04_LoopAndArray();
-             LCT05_Syntax2DArray();
+            // LCT05_Syntax2DArray();
             // LCT06_SizeOf2DArray();
             // LCT07_SyntaxNestedLoop();
         }
@@ -195,6 +195,7 @@ namespace Assignment
          * - lct06_my2DArray: อาร์เรย์ 2 มิติ (2D array) แก้ไขค่าได้จาก Inspector
          */
         [Header("LCT06_SizeOf2DArray")]
+        public int[,] LCT062DArray;
         public Grid2DInt lct06_my2DArray = new Grid2DInt
         {
             rows = 3,
@@ -204,6 +205,13 @@ namespace Assignment
         public void LCT06_SizeOf2DArray()
         {
             int[,] my2DArray = lct06_my2DArray.Get2DArray();
+            int rows = my2DArray.GetLength(0);
+            int cols = my2DArray.GetLength(1);
+            int size = my2DArray.Length;
+
+            Debug.Log("rows"+ rows);
+            Debug.Log("cols"+ cols);
+            Debug.Log("size"+ size);
         }
 
         /*
